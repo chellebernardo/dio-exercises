@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Olá mundo!</title>
+    <meta charset="UTF-8">
+    <!-- <script type="text/javascript" src="/js/main.js"></script> -->
+</head>
+
+<body onload="loaded()">
+    <script>
+        function clicou() {
+            document.getElementById('thanku').innerHTML = '<b>Obrigada por clicar, mona ami!</b>'
+        }
+        function redirect(){
+            //window.open('https://github.com/chellebernardo');
+            window.location.href = 'https://github.com/chellebernardo';
+        }
+        function trocar(elemento){
+            // document.getElementById('mousemove').innerHTML = 'Obrigada por passar o mouse, bb!'
+            elemento.innerHTML = 'Obrigada por passar o mouse, bb!'
+        }
+        function voltar(elemento){
+            // document.getElementById('mousemove').innerHTML = 'Passe o mouse aqui...' 
+            elemento.innerHTML = 'Passe o mouse aqui...'
+        }
+        function loaded(){
+            alert('Página carregada com sucesso, hihi!')
+        }
+        function change(elemento){
+            console.log(elemento.value)
+        }
+    </script>
+    <h1>Welcome to my beautiful white blank page!</h1>
+    <button onclick="clicou()">Clica em mim, por favor!</button>
+    <p id="thanku" onclick="redirect()"></p>
+    <p id="mousemove" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui...</p>
+    <p id="mousemove2" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui...</p>
+    <p id="mousemove3" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui...</p>
+
+
+    <select onchange="change(this)">
+        <option value="1">Valor 1</option>
+        <option value="2">Valor 2</option>
+        <option value="3">Valor 3</option>
+    </select>
+
+
+
+
+
+    <!-- JavaScript -->
+    <!-- <script type="text/javascript" src="/js/main.js"></script> -->
+</body>
+
+</html>
