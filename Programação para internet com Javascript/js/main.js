@@ -89,3 +89,25 @@ console.log(validar);
 function clicou() {
     alert('Obrigada por clicar, bb!')
 }
+
+function clicou() {
+    document.getElementById('thanku').innerHTML = '<b>Obrigada por clicar, mona ami!</b>'
+}
+function redirect(){
+    //window.open('https://github.com/chellebernardo');
+    window.location.href = 'https://github.com/chellebernardo';
+}
+function trocar(elemento){
+    // document.getElementById('mousemove').innerHTML = 'Obrigada por passar o mouse, bb!'
+    elemento.innerHTML = 'Obrigada por passar o mouse, bb!'
+}
+function voltar(elemento){
+    // document.getElementById('mousemove').innerHTML = 'Passe o mouse aqui...' 
+    elemento.innerHTML = 'Passe o mouse aqui...'
+}
+function loaded(){
+    alert('Página carregada com sucesso, hihi!')
+}
+function change(elemento){
+    console.log(elemento.value)
+}
